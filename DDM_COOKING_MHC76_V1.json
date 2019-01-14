@@ -3506,6 +3506,26 @@
     },
     "Features": {
       "Common": {
+        "QuietMode": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "Sys_OperationSetQuietModeEnabled"
+          }
+        },
+        "SetLightOn": {
+          "Visible": true,
+          "AvailableIn": [
+            "US",
+            "CA"
+          ],
+          "StateAttributes": {
+            "State": "OvenUpperCavity_DisplaySetLightOn"
+          }
+        },
         "SabbathMode": {
           "Visible": true,
           "AvailableIn": [
