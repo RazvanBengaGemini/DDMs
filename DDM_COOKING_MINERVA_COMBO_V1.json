@@ -1,11 +1,11 @@
 {
-  "_id": "DDM_Cooking_Minerva_Combo_V1",
-  "_rev": "40-fd6666db229b93936ba899fb930278e2",
+  "_id": "DDM_Cooking_Minerva_Single_V1",
+  "_rev": "30-578d25d998c3e34c26488a45c4b4a10c",
   "DDM": {
-    "_id": "DDM_Cooking_Minerva_Combo_V1",
-    "ddmName": "DDM_Cooking_Minerva_Combo_V1",
-    "modelNumber": "JMW3430",
-    "createdAt": "Apr 5, 2018 1:13:02 AM",
+    "_id": "DDM_Cooking_Minerva_Single_V1",
+    "ddmName": "DDM_Cooking_Minerva_Single_V1",
+    "modelNumber": "JJW3430",
+    "createdAt": "Apr 5, 2018 1:12:07 AM",
     "createdBy": "Rupal Kesharwani",
     "brandName": "JennAir",
     "category": "Cooking",
@@ -14,7 +14,7 @@
     "ccURI": "MinervaJA"
   },
   "DataModel": {
-    "Key": "DDM_Cooking_Minerva_Combo_V1",
+    "Key": "DDM_Cooking_Minerva_Single_V1",
     "attributes": [
       {
         "IsTemplate": false,
@@ -80,23 +80,6 @@
         "MappedAttributeName": "CycleEnergyConsumption",
         "Default": "0",
         "Key": "0x1030001"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityModeMicrowaveOven",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_CavityModeMicrowaveOven",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityModeMicrowaveOven",
-        "Default": "0",
-        "Key": "0x1704"
       },
       {
         "IsTemplate": false,
@@ -192,37 +175,19 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityDoorStatus",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "LowerCavity_CavityDoorStatus",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_CavityDoorStatus",
-        "Default": "0",
-        "Key": "0x3090002"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "UpperCavity_MicrowaveOvenUserInstruction",
         "Instance": "",
         "IsTimeSeries": false,
-        "DataType": "enum",
+        "DataType": "Integer8Bit",
         "AttributeName": "UpperCavity_MicrowaveOvenUserInstruction",
+        "RangeValues": {
+          "StepSize": "1",
+          "Min": "-128",
+          "Max": "127"
+        },
         "DeviceIO": "RO",
         "MappedAttributeName": "UpperCavity_MicrowaveOvenUserInstruction",
         "Default": "0",
-        "EnumValues": {
-          "0": "None",
-          "1": "PreHeat",
-          "2": "AddFood",
-          "3": "TurnFood",
-          "4": "StirFood",
-          "5": "Continue",
-          "6": "Sense",
-          "7": "Door",
-          "8": "End"
-        },
         "Key": "0x1619"
       },
       {
@@ -236,18 +201,6 @@
         "MappedAttributeName": "SubList",
         "Default": "0",
         "Key": "0x0"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CulinaryCenterVersionNumber",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "String",
-        "AttributeName": "LowerCavity_CulinaryCenterVersionNumber",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_CulinaryCenterVersionNumber",
-        "Default": "0",
-        "Key": "0x30C0002"
       },
       {
         "IsTemplate": false,
@@ -381,23 +334,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MicrowaveOvenUserInstruction",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_MicrowaveOvenUserInstruction",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_MicrowaveOvenUserInstruction",
-        "Default": "0",
-        "Key": "0x1719"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "publishedResult",
         "Instance": "",
         "IsTimeSeries": false,
@@ -453,23 +389,6 @@
           "8": "Cool"
         },
         "Key": "0x3030003"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_ElapseCookTime",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger32Bit",
-        "AttributeName": "LowerCavity_ElapseCookTime",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-2147483648",
-          "Max": "2147483647"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_ElapseCookTime",
-        "Default": "0",
-        "Key": "0x3070002"
       },
       {
         "IsTemplate": false,
@@ -567,30 +486,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MyCreationMessage",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "String",
-        "AttributeName": "LowerCavity_MyCreationMessage",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_MyCreationMessage",
-        "Default": "0",
-        "Key": "0x1721"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MeatProbeTempReached",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "LowerCavity_MeatProbeTempReached",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_MeatProbeTempReached",
-        "Default": "0",
-        "Key": "0x1720"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "UpperCavity_MeatProbeTargetTemp",
         "Instance": "",
         "IsTimeSeries": false,
@@ -625,18 +520,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_SabbathModeEnabled",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "LowerCavity_SabbathModeEnabled",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_SabbathModeEnabled",
-        "Default": "0",
-        "Key": "0x1713"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "UpperCavity_SabbathModeEnabled",
         "Instance": "",
         "IsTimeSeries": false,
@@ -666,18 +549,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_SabbathModeActive",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "LowerCavity_SabbathModeActive",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_SabbathModeActive",
-        "Default": "0",
-        "Key": "0x3140003"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "KitchenTimer4_AllElements",
         "Instance": "",
         "IsTimeSeries": false,
@@ -692,18 +563,6 @@
         "MappedAttributeName": "KitchenTimer4_AllElements",
         "Default": "0",
         "Key": "0x1500"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MeatProbeStatus",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "LowerCavity_MeatProbeStatus",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_MeatProbeStatus",
-        "Default": "0",
-        "Key": "0x30B0001"
       },
       {
         "IsTemplate": false,
@@ -800,26 +659,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityModeWarmingDrawer",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CavityModeWarmingDrawer",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityModeWarmingDrawer",
-        "Default": "0",
-        "EnumValues": {
-          "0": "Idle",
-          "1": "Low",
-          "2": "Med",
-          "3": "High",
-          "4": "SlowCookLow",
-          "5": "SlowCookHigh"
-        },
-        "Key": "0x5030003"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "GetRealTimePowerReading",
         "Instance": "",
         "IsTimeSeries": false,
@@ -846,23 +685,6 @@
         "MappedAttributeName": "UpperCavity_MWCookPower",
         "Default": "0",
         "Key": "0x4090004"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityTargetTemp",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger16Bit",
-        "AttributeName": "LowerCavity_CavityTargetTemp",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-32768",
-          "Max": "32767"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityTargetTemp",
-        "Default": "0",
-        "Key": "0x3150001"
       },
       {
         "IsTemplate": false,
@@ -945,23 +767,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_AllElements",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_AllElements",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_AllElements",
-        "Default": "0",
-        "Key": "0x1700"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "GetCommModuleInformation",
         "Instance": "",
         "IsTimeSeries": false,
@@ -971,18 +776,6 @@
         "MappedAttributeName": "GetCommModuleInformation",
         "Default": "0",
         "Key": "0x0"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityLight",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "LowerCavity_CavityLight",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityLight",
-        "Default": "0",
-        "Key": "0x3130001"
       },
       {
         "IsTemplate": false,
@@ -1012,23 +805,6 @@
         "MappedAttributeName": "KitchenTimer4_KitchenTimerState",
         "Default": "0",
         "Key": "0x8040001"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_DelayTimeRemaining",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger32Bit",
-        "AttributeName": "LowerCavity_DelayTimeRemaining",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-2147483648",
-          "Max": "2147483647"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_DelayTimeRemaining",
-        "Default": "0",
-        "Key": "0x3120003"
       },
       {
         "IsTemplate": false,
@@ -1139,31 +915,6 @@
         "MappedAttributeName": "SystemSettings_SystemResponse",
         "Default": "0",
         "Key": "0x190E"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_OperationsResponse",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_OperationsResponse",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_OperationsResponse",
-        "Default": "0",
-        "EnumValues": {
-          "0": "Success",
-          "1": "GeneralFailure",
-          "2": "InvalidMode",
-          "3": "InvalidTemperature",
-          "4": "InvalidCookTime",
-          "5": "InvalidCookTimeCompleteAction",
-          "6": "InvalidDelay",
-          "7": "CycleAlreadyRunning",
-          "8": "InBetweenTransition",
-          "9": "InSabbathMode",
-          "10": "InErrorState"
-        },
-        "Key": "0x171C"
       },
       {
         "IsTemplate": false,
@@ -1288,23 +1039,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MWFoodClass",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "IntegerUnsigned8Bit",
-        "AttributeName": "LowerCavity_MWFoodClass",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "0",
-          "Max": "255"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_MWFoodClass",
-        "Default": "0",
-        "Key": "0x1722"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "ClockTime_AllElements",
         "Instance": "",
         "IsTimeSeries": false,
@@ -1331,23 +1065,6 @@
         "MappedAttributeName": "GetSubscribeListVersion",
         "Default": "0",
         "Key": "0x0"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CookTimeCompleteAction",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CookTimeCompleteAction",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CookTimeCompleteAction",
-        "Default": "0",
-        "EnumValues": {
-          "1": "StayOn",
-          "2": "KeepWarm",
-          "3": "TurnOff"
-        },
-        "Key": "0x3140001"
       },
       {
         "IsTemplate": false,
@@ -1411,40 +1128,6 @@
         "MappedAttributeName": "ReasonCode",
         "Default": "0",
         "Key": "0x0"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MyCreationID",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_MyCreationID",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_MyCreationID",
-        "Default": "0",
-        "Key": "0x1714"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MWCookPower",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_MWCookPower",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_MWCookPower",
-        "Default": "0",
-        "Key": "0x4090008"
       },
       {
         "IsTemplate": false,
@@ -1541,76 +1224,17 @@
         "M2MAttributeName": "UpperCavity_MWAmountUnits",
         "Instance": "",
         "IsTimeSeries": false,
-        "DataType": "enum",
+        "DataType": "Integer8Bit",
         "AttributeName": "UpperCavity_MWAmountUnits",
+        "RangeValues": {
+          "StepSize": "1",
+          "Min": "-128",
+          "Max": "127"
+        },
         "DeviceIO": "RW",
         "MappedAttributeName": "UpperCavity_MWAmountUnits",
         "Default": "0",
-        "EnumValues": {
-          "0": "UnSet",
-          "1": "Oz",
-          "2": "Lbs",
-          "3": "Cup",
-          "4": "Cups",
-          "5": "Qt",
-          "6": "Inch",
-          "7": "Inches",
-          "8": "Slice",
-          "9": "Slices",
-          "10": "Piece",
-          "11": "Pieces",
-          "12": "Serving",
-          "13": "Servings",
-          "14": "Stick",
-          "15": "Sticks",
-          "16": "Patty",
-          "17": "Patties",
-          "18": "Steak",
-          "19": "Steaks",
-          "20": "Egg",
-          "21": "Eggs",
-          "22": "Potato",
-          "23": "Potatoes",
-          "24": "Loaf",
-          "25": "Loaves",
-          "26": "Plate",
-          "27": "Bagel",
-          "28": "Bagels",
-          "29": "Muffin",
-          "30": "Muffins",
-          "31": "Roll",
-          "32": "Rolls",
-          "33": "Chop",
-          "34": "Chops",
-          "35": "Pizza"
-        },
         "Key": "0x4090006"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityEventNotification",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CavityEventNotification",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_CavityEventNotification",
-        "Default": "0",
-        "EnumValues": {
-          "0": "NoEvent",
-          "1": "PreheatComplete",
-          "2": "Preheat25",
-          "3": "CookTimeComplete",
-          "4": "MeatProbeTempAchieved",
-          "5": "MeatProbeTargetChanged",
-          "6": "CookTimerChanged",
-          "7": "CookTimeCompleteReminder",
-          "8": "CookCycleCanceled",
-          "9": "CookModeChanged",
-          "10": "CookTargetTempChanged",
-          "11": "SelfClean"
-        },
-        "Key": "0x1707"
       },
       {
         "IsTemplate": false,
@@ -1623,23 +1247,6 @@
         "MappedAttributeName": "Appliance_RemoteEnabledStatus",
         "Default": "0",
         "Key": "0x1080001"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MWAmountUnits",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_MWAmountUnits",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_MWAmountUnits",
-        "Default": "0",
-        "Key": "0x1723"
       },
       {
         "IsTemplate": false,
@@ -1659,40 +1266,6 @@
           "4": "Off"
         },
         "Key": "0x2040008"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MyCreationStepNumber",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_MyCreationStepNumber",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_MyCreationStepNumber",
-        "Default": "0",
-        "Key": "0x1715"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CookTimeSetTime",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger32Bit",
-        "AttributeName": "LowerCavity_CookTimeSetTime",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-2147483648",
-          "Max": "2147483647"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CookTimeSetTime",
-        "Default": "0",
-        "Key": "0x3120001"
       },
       {
         "IsTemplate": false,
@@ -1760,72 +1333,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_DoorLockStatus",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Boolean",
-        "AttributeName": "LowerCavity_DoorLockStatus",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_DoorLockStatus",
-        "Default": "0",
-        "Key": "0x3090004"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_OvenTimerOperations",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_OvenTimerOperations",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_OvenTimerOperations",
-        "Default": "0",
-        "EnumValues": {
-          "0": "None",
-          "1": "Cancel",
-          "2": "Start",
-          "3": "Pause",
-          "4": "Resume",
-          "5": "Set"
-        },
-        "Key": "0x3120002"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MWDoneness",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "Integer8Bit",
-        "AttributeName": "LowerCavity_MWDoneness",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-128",
-          "Max": "127"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_MWDoneness",
-        "Default": "0",
-        "Key": "0x1725"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MeatProbeTargetTemp",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger16Bit",
-        "AttributeName": "LowerCavity_MeatProbeTargetTemp",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-32768",
-          "Max": "32767"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_MeatProbeTargetTemp",
-        "Default": "0",
-        "Key": "0x3150004"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "RealTimePowerReading",
         "Instance": "",
         "IsTimeSeries": false,
@@ -1857,49 +1364,6 @@
         "MappedAttributeName": "KitchenTimer2_AllElements",
         "Default": "0",
         "Key": "0x1300"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityOperations",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CavityOperations",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityOperations",
-        "Default": "0",
-        "EnumValues": {
-          "0": "None",
-          "1": "Dismiss",
-          "2": "Start",
-          "3": "SendToOven",
-          "4": "Modify"
-        },
-        "Key": "0x3140002"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CulinaryCenterUserInstruction",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CulinaryCenterUserInstruction",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_CulinaryCenterUserInstruction",
-        "Default": "0",
-        "EnumValues": {
-          "0": "None",
-          "1": "IfYouChooseToCoverWithFoilCarefully",
-          "2": "CheckForDonenessRemoveFoodFrom",
-          "3": "PlacePansSideBySideInTheOven",
-          "4": "UsingPotHoldersOrOvenMittsCarefully",
-          "5": "RemoveFromOvenServeAndEnjoy",
-          "6": "CheckForDonenessAddMoreTimeIfYouWouldLikeToContinue",
-          "7": "RemoveTheGooseIfDesiredCollectTheDrippingsOffOfTheGoose",
-          "8": "PlaceOneCakePanToTheBackLeftOfTheOven",
-          "9": "InterruptTEST"
-        },
-        "Key": "0x30C0001"
       },
       {
         "IsTemplate": false,
@@ -2047,24 +1511,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityModeMiniOven",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CavityModeMiniOven",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityModeMiniOven",
-        "Default": "0",
-        "EnumValues": {
-          "0": "Idle",
-          "1": "Bake",
-          "2": "KeepWarm",
-          "3": "SlowCook"
-        },
-        "Key": "0x6080003"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "CategoryID",
         "Instance": "",
         "IsTimeSeries": false,
@@ -2079,23 +1525,6 @@
         "MappedAttributeName": "CategoryID",
         "Default": "0",
         "Key": "0x0"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_MeatProbeTemp",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger16Bit",
-        "AttributeName": "LowerCavity_MeatProbeTemp",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-32768",
-          "Max": "32767"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_MeatProbeTemp",
-        "Default": "0",
-        "Key": "0x3080002"
       },
       {
         "IsTemplate": false,
@@ -2185,24 +1614,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_OvenTimerState",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_OvenTimerState",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_OvenTimerState",
-        "Default": "0",
-        "EnumValues": {
-          "0": "Idle",
-          "1": "Running",
-          "2": "Paused",
-          "3": "Completed"
-        },
-        "Key": "0x3090001"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "UpperCavity_CulinaryCenterUserInstruction",
         "Instance": "",
         "IsTimeSeries": false,
@@ -2221,7 +1632,7 @@
           "6": "CheckForDonenessAddMoreTimeIfYouWouldLikeToContinue",
           "7": "RemoveTheGooseIfDesiredCollectTheDrippingsOffOfTheGoose",
           "8": "PlaceOneCakePanToTheBackLeftOfTheOven",
-          "9": "InterruptTEST"
+          "9": "Interrupt"
         },
         "Key": "0x3060001"
       },
@@ -2241,23 +1652,6 @@
         "MappedAttributeName": "ClockTime_CurrentTime",
         "Default": "0",
         "Key": "0x1070001"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CookTimeRemaining",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger32Bit",
-        "AttributeName": "LowerCavity_CookTimeRemaining",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-2147483648",
-          "Max": "2147483647"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CookTimeRemaining",
-        "Default": "0",
-        "Key": "0x3070001"
       },
       {
         "IsTemplate": false,
@@ -2282,181 +1676,16 @@
         "M2MAttributeName": "UpperCavity_MWFoodClass",
         "Instance": "",
         "IsTimeSeries": false,
-        "DataType": "enum",
+        "DataType": "IntegerUnsigned8Bit",
         "AttributeName": "UpperCavity_MWFoodClass",
+        "RangeValues": {
+          "StepSize": "1",
+          "Min": "0",
+          "Max": "255"
+        },
         "DeviceIO": "RW",
         "MappedAttributeName": "UpperCavity_MWFoodClass",
         "Default": "0",
-        "EnumValues": {
-          "0": "UnSet ",
-          "1": "PopcornMWOSoloAutoCook ",
-          "2": "BakedPotatoAutoCook ",
-          "3": "ScrambledEggsAutoCook ",
-          "4": "PopcornConvectionGrillComboAutoCook ",
-          "5": "CerealAutoCook ",
-          "6": "FrozenEntryAutoCook ",
-          "7": "RoastBeefAutoCook ",
-          "8": "BreadAutoCook ",
-          "9": "CookiesAutoCook ",
-          "10": "Popcorn1SensorCook ",
-          "11": "Popcorn2SensorCook ",
-          "12": "ManualReheat ",
-          "13": "DinnerPlateAutoReheat ",
-          "14": "FrozenEntryAutoReheat ",
-          "15": "SoupAutoReheat ",
-          "16": "PizzaSlicesAutoReheat ",
-          "17": "CasseroleAutoReheat ",
-          "18": "BeverageWarmAutoReheat ",
-          "19": "BeverageHotAutoReheat ",
-          "20": "BeverageVeryHotAutoReheat ",
-          "21": "SauceAutoReheat ",
-          "22": "ManualGrill ",
-          "23": "ChickenPiecesBoneInAutoGrill ",
-          "24": "SteakAutoGrill ",
-          "25": "ManualBrowningPan ",
-          "26": "FrenchFriesAutoCrispBrowningPan ",
-          "27": "ThinCrustPizzaAutoCrispBrowningPan ",
-          "28": "PanStyleRisingCrustPizzaAutoCrispBrowningPan ",
-          "29": "PoultryBreastBonelessAutoCrispBrowningPan ",
-          "30": "PizzaRollsAutoCrispBrowningPan ",
-          "31": "HamburgerPattiesAutoCrispBrowningPan ",
-          "32": "BaconAutoCrispBrowningPan ",
-          "33": "PotatoNuggetsAutoCrispBrowningPan ",
-          "34": "ManualMelt ",
-          "35": "ButterAutoMelt ",
-          "36": "MargarineAutoMelt ",
-          "37": "ChocolateAutoMelt ",
-          "38": "CheeseAutoMelt ",
-          "39": "MarshmallowsAutoMelt ",
-          "40": "ManualSoften ",
-          "41": "ButterAutoSoften ",
-          "42": "MargarineAutoSoften ",
-          "43": "IceCreamAutoSoften ",
-          "44": "CreamCheeseAutoSoften ",
-          "45": "ManualDefrost ",
-          "46": "MeatsAutoDefrost ",
-          "47": "PoultryAutoDefrost ",
-          "48": "FishAutoDefrost ",
-          "49": "BreadAutoDefrost ",
-          "50": "JuiceAutoDefrost ",
-          "51": "SeafoodAutoDefrost ",
-          "52": "MuffinsSmallGuidedDefrost ",
-          "53": "MuffinsMediumGuidedDefrost ",
-          "54": "MuffinsLargeGuidedDefrost ",
-          "55": "RollsSmallGuidedDefrost ",
-          "56": "RollsMediumGuidedDefrost ",
-          "57": "RollsLargeGuidedDefrost ",
-          "58": "BagelsSmallGuidedDefrost ",
-          "59": "BagelsMediumGuidedDefrost ",
-          "60": "BagelsLargeGuidedDefrost ",
-          "61": "FishSteaksGuidedDefrost ",
-          "62": "FishFilletsGuidedDefrost ",
-          "63": "ScallopsGuidedDefrost ",
-          "64": "ShrimpGuidedDefrost ",
-          "65": "PoultryBreastGuidedDefrost ",
-          "66": "PoultryPiecesSmallGuidedDefrost ",
-          "67": "PoultryPiecesMediumGuidedDefrost ",
-          "68": "PoultryPiecesLargeGuidedDefrost ",
-          "69": "PoultryGroundGuidedDefrost ",
-          "70": "MeatSteaksSmallGuidedDefrost ",
-          "71": "MeatSteaksMediumGuidedDefrost ",
-          "72": "MeatSteaksLargeGuidedDefrost ",
-          "73": "MeatChopsSmallGuidedDefrost ",
-          "74": "MeatChopsMediumGuidedDefrost ",
-          "75": "MeatChopsLargeGuidedDefrost ",
-          "76": "MeatGroundGuidedDefrost ",
-          "77": "CookiesSpeedCook ",
-          "78": "BakeBreadSpeedCook ",
-          "79": "BeefRoastSpeedCook ",
-          "80": "BonelessBeefRoastSpeedCook ",
-          "81": "MeatballsSpeedCook ",
-          "82": "MeatLoafSpeedCook ",
-          "83": "SwissSteakSpeedCook ",
-          "84": "BonelessHamSpeedCook ",
-          "85": "BoneInPorkChopsSpeedCook ",
-          "86": "BonelessPorkChopsSpeedCook ",
-          "87": "BonelessPorkRoastSpeedCook ",
-          "88": "BonelessSkinlessChickenBreastSpeedCook ",
-          "89": "FrozenChickenBreastTendersSpeedCook ",
-          "90": "FrozenChickenNuggetsSpeedCook ",
-          "91": "BoneInChickenPieceswithSkinSpeedCook ",
-          "92": "ChickenWingsBuffaloSpeedCook ",
-          "93": "WholeChickenSpeedCook ",
-          "94": "BonelessTurkeyBreastSpeedCook ",
-          "95": "FrozenFriedChickenSpeedCook ",
-          "96": "FishFilletsSpeedCook ",
-          "97": "FrozenFishPortionsBatteredSpeedCook ",
-          "98": "FrozenFishSticksBreadedSpeedCook ",
-          "99": "FishSteaksSpeedCook ",
-          "100": "BiscuitsRefrigeratedLargeSpeedCook ",
-          "101": "BiscuitsRefrigeratedSmallSpeedCook ",
-          "102": "CinnamonRollsRefrigeratedLargeSpeedCook ",
-          "103": "CinnamonRollsRefrigeratedSmallSpeedCook ",
-          "104": "FrozenBreadSticksSpeedCook ",
-          "105": "GarlicCheeseBreadSpeedCook ",
-          "106": "CrescentRollsSpeedCook ",
-          "107": "BakedPotatoesSpeedCook ",
-          "108": "SweetPotatoesSpeedCook ",
-          "109": "RoastedVegetablesSpeedCook ",
-          "110": "FrozenFrenchFriesSpeedCook ",
-          "111": "FrozenOnionRingsSpeedCook ",
-          "112": "FrozenPotatoNuggetsSpeedCook ",
-          "113": "PotatoSkinsSpeedCook ",
-          "114": "PotatoWedgesSpeedCook ",
-          "115": "BrowniesSpeedCook ",
-          "116": "CakeSpeedCook ",
-          "117": "RefrigeratedDoughCookiesSpeedCook ",
-          "118": "FreshMadeCasseroleSpeedCook ",
-          "119": "FrozenEntryLasagnaSpeedCook ",
-          "120": "FreshMadeLasagnaSpeedCook ",
-          "121": "PizzaThinCrustSpeedCook ",
-          "122": "PizzaThickCrustSpeedCook ",
-          "123": "PizzaRollsMiniSpeedCook ",
-          "124": "FrozenCheeseSticksSpeedCook ",
-          "125": "FrozenJalepenoPoppersSpeedCook ",
-          "126": "FrozenBagelBitesSpeedCook ",
-          "127": "FrozenEggRollsSpeedCook ",
-          "128": "FrozenWafflesSpeedCook ",
-          "129": "FrozenPancakesSpeedCook ",
-          "130": "FrozenFrenchToastSpeedCook ",
-          "131": "FrozenSausageLinksSpeedCook ",
-          "132": "FrozenSausagePattiesSpeedCook ",
-          "133": "FrozenBreakfastSandwichSpeedCook ",
-          "134": "HotDogsSpeedCook ",
-          "135": "NachosSpeedCook ",
-          "136": "PizzaReheatSpeedCook ",
-          "137": "ManualSteam ",
-          "138": "PotatoesSteam ",
-          "139": "FreshVegetablesSteam ",
-          "140": "FrozenVegetablesSteam ",
-          "141": "FishFilletsSteam ",
-          "142": "ShrimpSteam ",
-          "143": "RiceSteam ",
-          "144": "PastaSteam ",
-          "145": "AsparagusSteam ",
-          "146": "BroccoliSteam ",
-          "147": "CarrotsSteam ",
-          "148": "CauliflowerSteam ",
-          "149": "CornonCobSteam ",
-          "150": "GreenBeansSteam ",
-          "151": "SpinachSteam ",
-          "152": "SummerSquashSteam ",
-          "153": "ManualBoilSimmer ",
-          "154": "WhiteRiceLongGrainBoilSimmer ",
-          "155": "WhiteRiceShortGrainBoilSimmer ",
-          "156": "DryPastaSpaghettiBoilSimmer ",
-          "157": "DryPastaMacaroniBoilSimmer ",
-          "158": "DryPastaPenneBoilSimmer ",
-          "159": "DryPastaFettuchiniBoilSimmer ",
-          "160": "DryPastaRotiniBoilSimmer ",
-          "161": "FreshPastaTortelliniBoilSimmer ",
-          "162": "FreshPastaRavioliBoilSimmer ",
-          "163": "FreshPastaLinguineBoilSimmer ",
-          "164": "ManualConvectRoast ",
-          "165": "ManualConvectBake ",
-          "166": "ManualCook ",
-          "167": "ManualKeepWarm "
-        },
         "Key": "0x4090005"
       },
       {
@@ -2566,17 +1795,16 @@
         "M2MAttributeName": "UpperCavity_MWDoneness",
         "Instance": "",
         "IsTimeSeries": false,
-        "DataType": "enum",
+        "DataType": "Integer8Bit",
         "AttributeName": "UpperCavity_MWDoneness",
+        "RangeValues": {
+          "StepSize": "1",
+          "Min": "-128",
+          "Max": "127"
+        },
         "DeviceIO": "RO",
         "MappedAttributeName": "UpperCavity_MWDoneness",
         "Default": "0",
-        "EnumValues": {
-          "0": "UnSet",
-          "1": "LessDone",
-          "2": "Suggested",
-          "3": "MoreDone"
-        },
         "Key": "0x4090002"
       },
       {
@@ -2636,18 +1864,6 @@
         "MappedAttributeName": "KitchenTimer3_KitchenTimerCurrentTime",
         "Default": "0",
         "Key": "0x8030002"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_Amount",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "String",
-        "AttributeName": "LowerCavity_Amount",
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_Amount",
-        "Default": "0",
-        "Key": "0x1724"
       },
       {
         "IsTemplate": false,
@@ -2720,23 +1936,6 @@
         "MappedAttributeName": "UpperCavity_MeatProbeTempReached",
         "Default": "0",
         "Key": "0x1620"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CulinaryCenterID",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger16Bit",
-        "AttributeName": "LowerCavity_CulinaryCenterID",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-32768",
-          "Max": "32767"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CulinaryCenterID",
-        "Default": "0",
-        "Key": "0x3160001"
       },
       {
         "IsTemplate": false,
@@ -2818,30 +2017,16 @@
         "M2MAttributeName": "UpperCavity_CavityModeMicrowaveOven",
         "Instance": "",
         "IsTimeSeries": false,
-        "DataType": "enum",
+        "DataType": "Integer8Bit",
         "AttributeName": "UpperCavity_CavityModeMicrowaveOven",
+        "RangeValues": {
+          "StepSize": "1",
+          "Min": "-128",
+          "Max": "127"
+        },
         "DeviceIO": "RW",
         "MappedAttributeName": "UpperCavity_CavityModeMicrowaveOven",
         "Default": "0",
-        "EnumValues": {
-          "0": "Idle",
-          "1": "Reheat",
-          "2": "Warm",
-          "3": "Melt",
-          "4": "Soften",
-          "5": "Defrost",
-          "6": "SteamCook",
-          "7": "BoilSimmer",
-          "8": "BrowningPan",
-          "9": "Cook",
-          "10": "ConvectBake",
-          "11": "ConvectRoast",
-          "12": "Grill",
-          "13": "Automatic",
-          "14": "RapidProofFrozenDough",
-          "15": "CvtFrnPizza",
-          "16": "OvenAutomatic"
-        },
         "Key": "0x4090003"
       },
       {
@@ -2879,23 +2064,6 @@
         "MappedAttributeName": "KitchenTimer1_KitchenTimerCurrentTime",
         "Default": "0",
         "Key": "0x8010002"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_DelayTimeSetTime",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger32Bit",
-        "AttributeName": "LowerCavity_DelayTimeSetTime",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-2147483648",
-          "Max": "2147483647"
-        },
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_DelayTimeSetTime",
-        "Default": "0",
-        "Key": "0x3120004"
       },
       {
         "IsTemplate": false,
@@ -2998,47 +2166,6 @@
       },
       {
         "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityModeOven",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CavityModeOven",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityModeOven",
-        "Default": "0",
-        "EnumValues": {
-          "0": "Idle",
-          "1": "Bake",
-          "2": "NoPreheat1RackCooking",
-          "3": "ConvectBake",
-          "4": "ConvectBakeRapidPreheat",
-          "5": "Broil",
-          "6": "ConvectBroil",
-          "7": "KeepWarm",
-          "8": "Proof",
-          "9": "ConvectRoast",
-          "10": "CvtPastry",
-          "11": "CvtSlowRoast",
-          "12": "TrueConvect",
-          "13": "RapidProof",
-          "14": "CvtFrznPizza",
-          "15": "OvenAutomatic",
-          "16": "Clean",
-          "17": "Cool",
-          "18": "Sabbath",
-          "19": "CvtSlowRoast4hrs",
-          "20": "CvtSlowRoast8hrs",
-          "21": "CvtSlowRoast12hrs",
-          "22": "CulinaryCenter",
-          "23": "MyCreations",
-          "100": "FoodGuide",
-          "101": "ProbeCook",
-          "102": "ConvertRecipe"
-        },
-        "Key": "0x3150003"
-      },
-      {
-        "IsTemplate": false,
         "M2MAttributeName": "password",
         "Instance": "",
         "IsTimeSeries": false,
@@ -3048,29 +2175,6 @@
         "MappedAttributeName": "password",
         "Default": "0",
         "Key": "0x0"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityHeatState",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "enum",
-        "AttributeName": "LowerCavity_CavityHeatState",
-        "DeviceIO": "RW",
-        "MappedAttributeName": "LowerCavity_CavityHeatState",
-        "Default": "0",
-        "EnumValues": {
-          "0": "Off",
-          "1": "Preheating",
-          "2": "Steady",
-          "3": "Programming",
-          "4": "Delaying",
-          "5": "Normal",
-          "6": "Continue",
-          "7": "Sense",
-          "8": "Cool"
-        },
-        "Key": "0x3090003"
       },
       {
         "IsTemplate": false,
@@ -3146,34 +2250,17 @@
         "MappedAttributeName": "UpperCavity_CulinaryCenterVersionNumber",
         "Default": "0",
         "Key": "0x3060002"
-      },
-      {
-        "IsTemplate": false,
-        "M2MAttributeName": "LowerCavity_CavityActualTemp",
-        "Instance": "",
-        "IsTimeSeries": false,
-        "DataType": "BEInteger16Bit",
-        "AttributeName": "LowerCavity_CavityActualTemp",
-        "RangeValues": {
-          "StepSize": "1",
-          "Min": "-32768",
-          "Max": "32767"
-        },
-        "DeviceIO": "RO",
-        "MappedAttributeName": "LowerCavity_CavityActualTemp",
-        "Default": "0",
-        "Key": "0x3080001"
       }
     ]
   },
   "Personality": {
-    "Key": "DDM_Cooking_Minerva_Combo_V1",
+    "Key": "DDM_Cooking_Minerva_Single_V1",
     "Capability": {
-      "OvenLowerCavity": {
+      "OvenUpperCavity": {
         "CapabilityData": {
-          "LowerCavity_CavityModeOvenCvtFrznPizza": {
+          "UpperCavity_CavityModeOvenCvtFrznPizza": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "Min": 3000,
                   "Max": 5000,
@@ -3183,7 +2270,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3191,7 +2278,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3199,7 +2286,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3209,9 +2296,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenCvtPastry": {
+          "UpperCavity_CavityModeOvenCvtPastry": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3234,7 +2321,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3242,7 +2329,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3250,7 +2337,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3260,9 +2347,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenCvtSlowRoast12hrs": {
+          "UpperCavity_CavityModeOvenCvtSlowRoast12hrs": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "Min": 1900,
                   "Max": 2250,
@@ -3270,13 +2357,13 @@
                   "Default": 2000
                 }
               },
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "List": [
                   43200
                 ],
                 "Default": 43200
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3286,7 +2373,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3296,9 +2383,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenCvtSlowRoast8hrs": {
+          "UpperCavity_CavityModeOvenCvtSlowRoast8hrs": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "Min": 2000,
                   "Max": 2500,
@@ -3306,13 +2393,13 @@
                   "Default": 2250
                 }
               },
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "List": [
                   28800
                 ],
                 "Default": 28800
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3322,7 +2409,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3332,9 +2419,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenCvtSlowRoast4hrs": {
+          "UpperCavity_CavityModeOvenCvtSlowRoast4hrs": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "Min": 2500,
                   "Max": 3000,
@@ -3342,13 +2429,13 @@
                   "Default": 2750
                 }
               },
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "List": [
                   14400
                 ],
                 "Default": 14400
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3358,7 +2445,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3368,9 +2455,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenTrueConvect": {
+          "UpperCavity_CavityModeOvenTrueConvect": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3393,7 +2480,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3401,7 +2488,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3409,7 +2496,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3419,9 +2506,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvectRoast": {
+          "UpperCavity_CavityModeOvenConvectRoast": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3444,7 +2531,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3452,7 +2539,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3460,7 +2547,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3470,9 +2557,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvectBroil": {
+          "UpperCavity_CavityModeOvenConvectBroil": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "Min": 4500,
                   "Max": 5500,
@@ -3482,7 +2569,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3490,7 +2577,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3498,7 +2585,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3508,9 +2595,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvectBake": {
+          "UpperCavity_CavityModeOvenConvectBake": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3533,7 +2620,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3541,7 +2628,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3549,7 +2636,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3559,9 +2646,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvectBakeRapidPreheat": {
+          "UpperCavity_CavityModeOvenConvectBakeRapidPreheat": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3584,7 +2671,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3592,7 +2679,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3600,7 +2687,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3610,9 +2697,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvertRecipeCvtPastry": {
+          "UpperCavity_CavityModeOvenConvertRecipeCvtPastry": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3635,7 +2722,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3643,7 +2730,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3651,7 +2738,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3661,9 +2748,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvertRecipeConvectRoast": {
+          "UpperCavity_CavityModeOvenConvertRecipeConvectRoast": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3686,7 +2773,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3694,7 +2781,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3702,7 +2789,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3712,9 +2799,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvertRecipeConvectBake": {
+          "UpperCavity_CavityModeOvenConvertRecipeConvectBake": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3737,7 +2824,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3745,7 +2832,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3753,7 +2840,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3763,9 +2850,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenConvertRecipeConvectBroil": {
+          "UpperCavity_CavityModeOvenConvertRecipeConvectBroil": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "Min": 4500,
                   "Max": 5500,
@@ -3775,7 +2862,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3783,7 +2870,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3791,7 +2878,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3801,9 +2888,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenBake": {
+          "UpperCavity_CavityModeOvenBake": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3826,7 +2913,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3834,7 +2921,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3842,7 +2929,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3852,9 +2939,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenNoPreheat1RackCooking": {
+          "UpperCavity_CavityModeOvenNoPreheat1RackCooking": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3877,7 +2964,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3885,7 +2972,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3893,7 +2980,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3903,9 +2990,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenBroil": {
+          "UpperCavity_CavityModeOvenBroil": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "StepF": 5,
                   "Min": 4500,
@@ -3915,7 +3002,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3923,7 +3010,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3931,7 +3018,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3941,9 +3028,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCConvectRoast": {
+          "UpperCavity_CavityModeOvenPCConvectRoast": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -3966,7 +3053,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -3974,7 +3061,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -3982,7 +3069,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -3992,9 +3079,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCConvectBake": {
+          "UpperCavity_CavityModeOvenPCConvectBake": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4017,7 +3104,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -4025,7 +3112,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4033,7 +3120,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -4043,9 +3130,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCBake": {
+          "UpperCavity_CavityModeOvenPCBake": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4068,7 +3155,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -4076,7 +3163,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4084,7 +3171,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -4094,9 +3181,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGPrecookedHam": {
+          "UpperCavity_CavityModeOvenPCFGPrecookedHam": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4117,7 +3204,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1400
                 ],
@@ -4125,7 +3212,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4135,9 +3222,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGPorkMedium": {
+          "UpperCavity_CavityModeOvenPCFGPorkMedium": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4158,7 +3245,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1600
                 ],
@@ -4166,7 +3253,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4176,9 +3263,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGPorkWellDone": {
+          "UpperCavity_CavityModeOvenPCFGPorkWellDone": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4199,7 +3286,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1600
                 ],
@@ -4207,7 +3294,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4217,9 +3304,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGChickenBreast": {
+          "UpperCavity_CavityModeOvenPCFGChickenBreast": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4240,7 +3327,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1700
                 ],
@@ -4248,7 +3335,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4258,9 +3345,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGChickenWhole": {
+          "UpperCavity_CavityModeOvenPCFGChickenWhole": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4281,7 +3368,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1800
                 ],
@@ -4289,7 +3376,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4299,9 +3386,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGTurkeyBreast": {
+          "UpperCavity_CavityModeOvenPCFGTurkeyBreast": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4322,7 +3409,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1700
                 ],
@@ -4330,7 +3417,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4340,9 +3427,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGTurkeyWhole": {
+          "UpperCavity_CavityModeOvenPCFGTurkeyWhole": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4363,7 +3450,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1800
                 ],
@@ -4371,7 +3458,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4381,9 +3468,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGBeefMediumRare": {
+          "UpperCavity_CavityModeOvenPCFGBeefMediumRare": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4404,7 +3491,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1300
                 ],
@@ -4412,7 +3499,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4422,9 +3509,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGBeefMedium": {
+          "UpperCavity_CavityModeOvenPCFGBeefMedium": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4445,7 +3532,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1500
                 ],
@@ -4453,7 +3540,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4463,9 +3550,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGBeefWellDone": {
+          "UpperCavity_CavityModeOvenPCFGBeefWellDone": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4486,7 +3573,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1600
                 ],
@@ -4494,7 +3581,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4504,9 +3591,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGLambMediumRare": {
+          "UpperCavity_CavityModeOvenPCFGLambMediumRare": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4527,7 +3614,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1350
                 ],
@@ -4535,7 +3622,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4545,9 +3632,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGLambMedium": {
+          "UpperCavity_CavityModeOvenPCFGLambMedium": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4568,7 +3655,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1400
                 ],
@@ -4576,7 +3663,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4586,9 +3673,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGLambWellDone": {
+          "UpperCavity_CavityModeOvenPCFGLambWellDone": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4609,7 +3696,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1600
                 ],
@@ -4617,7 +3704,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4627,9 +3714,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGVealMediumRare": {
+          "UpperCavity_CavityModeOvenPCFGVealMediumRare": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4650,7 +3737,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1350
                 ],
@@ -4658,7 +3745,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4668,9 +3755,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGVealMedium": {
+          "UpperCavity_CavityModeOvenPCFGVealMedium": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4691,7 +3778,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1500
                 ],
@@ -4699,7 +3786,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4709,9 +3796,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenPCFGVealWellDone": {
+          "UpperCavity_CavityModeOvenPCFGVealWellDone": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4732,7 +3819,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_MeatProbeTargetTemp": {
+              "UpperCavity_MeatProbeTargetTemp": {
                 "List": [
                   1600
                 ],
@@ -4740,7 +3827,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4750,9 +3837,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenKeepWarm": {
+          "UpperCavity_CavityModeOvenKeepWarm": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "TempRange": {
                   "StepF": 5,
                   "Min": 1500,
@@ -4762,7 +3849,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -4770,7 +3857,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4778,7 +3865,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -4788,9 +3875,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenRapidProof": {
+          "UpperCavity_CavityModeOvenRapidProof": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1100
                 ],
@@ -4798,7 +3885,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -4806,7 +3893,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4814,7 +3901,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -4824,9 +3911,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenProof": {
+          "UpperCavity_CavityModeOvenProof": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1000
                 ],
@@ -4834,7 +3921,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43200,
@@ -4842,7 +3929,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4850,7 +3937,7 @@
                   "Default": 0
                 }
               },
-              "LowerCavity_CookTimeCompleteAction": {
+              "UpperCavity_CookTimeCompleteAction": {
                 "Enumeration": [
                   "StayOn",
                   "KeepWarm",
@@ -4860,9 +3947,9 @@
               }
             }
           },
-          "LowerCavity_CavityModeOvenSabbath": {
+          "UpperCavity_CavityModeOvenSabbath": {
             "Required": {
-              "LowerCavity_CavityTargetTemp": {
+              "UpperCavity_CavityTargetTemp": {
                 "List": [
                   1700,
                   2000,
@@ -4883,7 +3970,7 @@
                 ],
                 "Default": 3500
               },
-              "LowerCavity_CookTimeSetTime": {
+              "UpperCavity_CookTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 86400,
@@ -4893,7 +3980,7 @@
               }
             },
             "Optional": {
-              "LowerCavity_DelayTimeSetTime": {
+              "UpperCavity_DelayTimeSetTime": {
                 "Range": {
                   "Min": 0,
                   "Max": 43140,
@@ -4905,429 +3992,429 @@
           }
         },
         "SetOven": {
-          "LowerCavity_CavityModeOvenCvtFrznPizza": {
+          "UpperCavity_CavityModeOvenCvtFrznPizza": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "CvtFrznPizza"
               ]
             },
             "Name": "CvtFrznPizza"
           },
-          "LowerCavity_CavityModeOvenCvtPastry": {
+          "UpperCavity_CavityModeOvenCvtPastry": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "CvtPastry"
               ]
             },
             "Name": "CvtPastry"
           },
-          "LowerCavity_CavityModeOvenCvtSlowRoast12hrs": {
+          "UpperCavity_CavityModeOvenCvtSlowRoast12hrs": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "CvtSlowRoast12hrs"
               ]
             },
             "Name": "CvtSlowRoast12hrs"
           },
-          "LowerCavity_CavityModeOvenCvtSlowRoast8hrs": {
+          "UpperCavity_CavityModeOvenCvtSlowRoast8hrs": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "CvtSlowRoast8hrs"
               ]
             },
             "Name": "CvtSlowRoast8hrs"
           },
-          "LowerCavity_CavityModeOvenCvtSlowRoast4hrs": {
+          "UpperCavity_CavityModeOvenCvtSlowRoast4hrs": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "CvtSlowRoast4hrs"
               ]
             },
             "Name": "CvtSlowRoast4hrs"
           },
-          "LowerCavity_CavityModeOvenTrueConvect": {
+          "UpperCavity_CavityModeOvenTrueConvect": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "TrueConvect"
               ]
             },
             "Name": "TrueConvect"
           },
-          "LowerCavity_CavityModeOvenConvectRoast": {
+          "UpperCavity_CavityModeOvenConvectRoast": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "ConvectRoast"
               ]
             },
             "Name": "ConvectRoast"
           },
-          "LowerCavity_CavityModeOvenConvectBroil": {
+          "UpperCavity_CavityModeOvenConvectBroil": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "ConvectBroil"
               ]
             },
             "Name": "ConvectBroil"
           },
-          "LowerCavity_CavityModeOvenConvectBake": {
+          "UpperCavity_CavityModeOvenConvectBake": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "ConvectBake"
               ]
             },
             "Name": "ConvectBake"
           },
-          "LowerCavity_CavityModeOvenConvectBakeRapidPreheat": {
+          "UpperCavity_CavityModeOvenConvectBakeRapidPreheat": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "ConvectBakeRapidPreheat"
               ]
             },
             "Name": "ConvectBakeRapidPreheat"
           },
-          "LowerCavity_CavityModeOvenConvertRecipe": {
-            "LowerCavity_CavityModeOvenConvertRecipeCvtPastry": {
+          "UpperCavity_CavityModeOvenConvertRecipe": {
+            "UpperCavity_CavityModeOvenConvertRecipeCvtPastry": {
               "Name": "CvtPastry",
               "Attributes": {
-                "LowerCavity_CavityModeOven": [
+                "UpperCavity_CavityModeOven": [
                   "ConvertRecipe",
                   "CvtPastry"
                 ]
               }
             },
-            "LowerCavity_CavityModeOvenConvertRecipeConvectRoast": {
+            "UpperCavity_CavityModeOvenConvertRecipeConvectRoast": {
               "Name": "ConvectRoast",
               "Attributes": {
-                "LowerCavity_CavityModeOven": [
+                "UpperCavity_CavityModeOven": [
                   "ConvertRecipe",
                   "ConvectRoast"
                 ]
               }
             },
-            "LowerCavity_CavityModeOvenConvertRecipeConvectBake": {
+            "UpperCavity_CavityModeOvenConvertRecipeConvectBake": {
               "Name": "ConvectBake",
               "Attributes": {
-                "LowerCavity_CavityModeOven": [
+                "UpperCavity_CavityModeOven": [
                   "ConvertRecipe",
                   "ConvectBake"
                 ]
               }
             },
-            "LowerCavity_CavityModeOvenConvertRecipeConvectBroil": {
+            "UpperCavity_CavityModeOvenConvertRecipeConvectBroil": {
               "Name": "ConvectBroil",
               "Attributes": {
-                "LowerCavity_CavityModeOven": [
+                "UpperCavity_CavityModeOven": [
                   "ConvertRecipe",
                   "ConvectBroil"
                 ]
               }
             }
           },
-          "LowerCavity_CavityModeOvenBake": {
+          "UpperCavity_CavityModeOvenBake": {
             "Name": "Bake",
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "Bake"
               ]
             }
           },
-          "LowerCavity_CavityModeOvenNoPreheat1RackCooking": {
+          "UpperCavity_CavityModeOvenNoPreheat1RackCooking": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "NoPreheat1RackCooking"
               ]
             },
             "Name": "NoPreheat1RackCooking"
           },
-          "LowerCavity_CavityModeOvenBroil": {
+          "UpperCavity_CavityModeOvenBroil": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "Broil"
               ]
             },
             "Name": "Broil"
           },
-          "LowerCavity_CavityModeOvenProbeCook": {
-            "LowerCavity_CavityModeOvenPCConvectRoast": {
+          "UpperCavity_CavityModeOvenProbeCook": {
+            "UpperCavity_CavityModeOvenPCConvectRoast": {
               "Name": "ConvectRoast",
               "Attributes": {
-                "LowerCavity_CavityModeOven": [
+                "UpperCavity_CavityModeOven": [
                   "ProbeCook",
                   "ConvectRoast"
                 ]
               },
               "Accessories": [
-                "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
               ]
             },
-            "LowerCavity_CavityModeOvenPCConvectBake": {
+            "UpperCavity_CavityModeOvenPCConvectBake": {
               "Name": "ConvectBake",
               "Attributes": {
-                "LowerCavity_CavityModeOven": [
+                "UpperCavity_CavityModeOven": [
                   "ProbeCook",
                   "ConvectBake"
                 ]
               },
               "Accessories": [
-                "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
               ]
             },
-            "LowerCavity_CavityModeOvenPCFoodGuide": {
-              "LowerCavity_CavityModeOvenPCFGPrecookedHam": {
+            "UpperCavity_CavityModeOvenPCFoodGuide": {
+              "UpperCavity_CavityModeOvenPCFGPrecookedHam": {
                 "Name": "PrecookedHam",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "Bake"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGPorkMedium": {
+              "UpperCavity_CavityModeOvenPCFGPorkMedium": {
                 "Name": "PorkMedium",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGPorkWellDone": {
+              "UpperCavity_CavityModeOvenPCFGPorkWellDone": {
                 "Name": "PorkWellDone",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGChickenBreast": {
+              "UpperCavity_CavityModeOvenPCFGChickenBreast": {
                 "Name": "ChickenBreast",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGChickenWhole": {
+              "UpperCavity_CavityModeOvenPCFGChickenWhole": {
                 "Name": "ChickenWhole",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGTurkeyBreast": {
+              "UpperCavity_CavityModeOvenPCFGTurkeyBreast": {
                 "Name": "TurkeyBreast",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGTurkeyWhole": {
+              "UpperCavity_CavityModeOvenPCFGTurkeyWhole": {
                 "Name": "TurkeyWhole",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGBeefMediumRare": {
+              "UpperCavity_CavityModeOvenPCFGBeefMediumRare": {
                 "Name": "BeefMediumRare",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGBeefMedium": {
+              "UpperCavity_CavityModeOvenPCFGBeefMedium": {
                 "Name": "BeefMedium",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGBeefWellDone": {
+              "UpperCavity_CavityModeOvenPCFGBeefWellDone": {
                 "Name": "BeefWellDone",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGLambMediumRare": {
+              "UpperCavity_CavityModeOvenPCFGLambMediumRare": {
                 "Name": "LambMediumRare",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGLambMedium": {
+              "UpperCavity_CavityModeOvenPCFGLambMedium": {
                 "Name": "LambMedium",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGLambWellDone": {
+              "UpperCavity_CavityModeOvenPCFGLambWellDone": {
                 "Name": "LambWellDone",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGVealMediumRare": {
+              "UpperCavity_CavityModeOvenPCFGVealMediumRare": {
                 "Name": "VealMediumRare",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGVealMedium": {
+              "UpperCavity_CavityModeOvenPCFGVealMedium": {
                 "Name": "VealMedium",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               },
-              "LowerCavity_CavityModeOvenPCFGVealWellDone": {
+              "UpperCavity_CavityModeOvenPCFGVealWellDone": {
                 "Name": "VealWellDone",
                 "Attributes": {
-                  "LowerCavity_CavityModeOven": [
+                  "UpperCavity_CavityModeOven": [
                     "ProbeCook",
                     "FoodGuide",
                     "ConvectRoast"
                   ]
                 },
                 "Accessories": [
-                  "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                  "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
                 ]
               }
             },
-            "LowerCavity_CavityModeOvenPCBake": {
+            "UpperCavity_CavityModeOvenPCBake": {
               "Name": "Bake",
               "Attributes": {
-                "LowerCavity_CavityModeOven": [
+                "UpperCavity_CavityModeOven": [
                   "ProbeCook",
                   "Bake"
                 ]
               },
               "Accessories": [
-                "OvenLowerCavity_AlertStatusMeatProbePluggedIn"
+                "OvenUpperCavity_AlertStatusMeatProbePluggedIn"
               ]
             }
           },
-          "LowerCavity_CavityModeOvenKeepWarm": {
+          "UpperCavity_CavityModeOvenKeepWarm": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "KeepWarm"
               ]
             },
             "Name": "KeepWarm"
           },
-          "LowerCavity_CavityModeOvenRapidProof": {
+          "UpperCavity_CavityModeOvenRapidProof": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "RapidProof"
               ]
             },
             "Name": "RapidProof"
           },
-          "LowerCavity_CavityModeOvenProof": {
+          "UpperCavity_CavityModeOvenProof": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "Proof"
               ]
             },
             "Name": "Proof"
           },
-          "LowerCavity_CavityModeOvenSabbath": {
+          "UpperCavity_CavityModeOvenSabbath": {
             "Attributes": {
-              "LowerCavity_CavityModeOven": [
+              "UpperCavity_CavityModeOven": [
                 "Sabbath"
               ]
             },
             "Name": "Sabbath"
           },
-          "Default": "LowerCavity_CavityModeOvenBake"
+          "Default": "UpperCavity_CavityModeOvenBake"
         }
       }
     },
@@ -5365,33 +4452,6 @@
       },
       "OvenUpperCavity": {
         "SetOven": {
-          "Visible": false,
-          "AvailableIn": [
-            "US",
-            "CA"
-          ]
-        },
-        "LightOnOff": {
-          "Visible": false,
-          "AvailableIn": [
-            "US",
-            "CA"
-          ]
-        },
-        "MeatProbe": {
-          "Visible": true,
-          "ReadOnly": true,
-          "AvailableIn": [
-            "US",
-            "CA"
-          ],
-          "StateAttributes": {
-           "State": "UpperCavity_MeatProbeStatus"
-          }
-        }
-      },
-      "OvenLowerCavity": {
-        "SetOven": {
           "Visible": true,
           "AvailableIn": [
             "US",
@@ -5401,26 +4461,26 @@
             
           },
           "StatusAttributes": [
-            "LowerCavity_CavityModeOven",
-            "LowerCavity_CavityTargetTemp",
-            "LowerCavity_DelayTimeRemaining",
-            "LowerCavity_CookTimeRemaining",
-            "LowerCavity_OvenTimerState",
-            "LowerCavity_CavityHeatState",
-            "LowerCavity_MeatProbeStatus",
-            "LowerCavity_CookTimeSetTime",
-            "LowerCavity_MeatProbeTargetTemp",
-            "LowerCavity_MeatProbeTemp",
-            "LowerCavity_DelayTimeSetTime",
-            "LowerCavity_CavityActualTemp"
+            "UpperCavity_CavityModeOven",
+            "UpperCavity_CavityTargetTemp",
+            "UpperCavity_DelayTimeRemaining",
+            "UpperCavity_CookTimeRemaining",
+            "UpperCavity_OvenTimerState",
+            "UpperCavity_CavityHeatState",
+            "UpperCavity_MeatProbeStatus",
+            "UpperCavity_CookTimeSetTime",
+            "UpperCavity_MeatProbeTargetTemp",
+            "UpperCavity_MeatProbeTemp",
+            "UpperCavity_DelayTimeSetTime",
+            "UpperCavity_CavityActualTemp"
           ],
           "SendCommandAttributes": [
-            "LowerCavity_CavityOperations",
-            "LowerCavity_OvenTimerOperations"
+            "UpperCavity_CavityOperations",
+            "UpperCavity_OvenTimerOperations"
           ],
           "SetOperationsMapping": {
-            "Operation": "LowerCavity_CavityOperations",
-            "CookTime": "LowerCavity_OvenTimerOperations"
+            "Operation": "UpperCavity_CavityOperations",
+            "CookTime": "UpperCavity_OvenTimerOperations"
           }
         },
         "LightOnOff": {
@@ -5429,9 +4489,9 @@
             "US",
             "CA"
           ],
-          "StateAttributes": {
-           "State": "LowerCavity_CavityLight"
-          }
+          "StateAttributes": [
+            "UpperCavity_CavityLight"
+          ]
         },
         "MeatProbe": {
           "Visible": true,
@@ -5440,9 +4500,9 @@
             "US",
             "CA"
           ],
-          "StateAttributes": {
-           "State": "LowerCavity_MeatProbeStatus"
-          }
+          "StateAttributes": [
+            "UpperCavity_MeatProbeStatus"
+          ]
         }
       }
     },
@@ -5457,14 +4517,14 @@
     ]
   },
   "Alerts": {
-    "Key": "DDM_Cooking_Minerva_Combo_V1",
+    "Key": "DDM_Cooking_Minerva_Single_V1",
     "Alerts": [
       {
         "ApplianceAlerts": [
           {
-            "alertId": 563,
+            "alertId": 595,
             "name": "PreheatComplete",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5474,9 +4534,9 @@
             "enable": true
           },
           {
-            "alertId": 564,
+            "alertId": 596,
             "name": "Preheat25",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5486,21 +4546,21 @@
             "enable": false
           },
           {
-            "alertId": 565,
+            "alertId": 597,
             "name": "CookTimeComplete",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
             "autodisarm": false,
             "autodisable": false,
             "visible": true,
-            "enable": true
+            "enable": false
           },
           {
-            "alertId": 566,
+            "alertId": 598,
             "name": "MeatProbeTempAchieved",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5510,9 +4570,9 @@
             "enable": true
           },
           {
-            "alertId": 567,
+            "alertId": 599,
             "name": "MeatProbeTargetChanged",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5522,9 +4582,9 @@
             "enable": false
           },
           {
-            "alertId": 568,
+            "alertId": 600,
             "name": "CookTimerChanged",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5534,9 +4594,9 @@
             "enable": false
           },
           {
-            "alertId": 569,
+            "alertId": 601,
             "name": "CookTimeCompleteReminder",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5546,9 +4606,9 @@
             "enable": true
           },
           {
-            "alertId": 570,
+            "alertId": 602,
             "name": "CookCycleCancelled",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5558,9 +4618,9 @@
             "enable": false
           },
           {
-            "alertId": 571,
+            "alertId": 603,
             "name": "CookModeChanged",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5570,9 +4630,9 @@
             "enable": false
           },
           {
-            "alertId": 572,
+            "alertId": 604,
             "name": "CookTargetTempChanged",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5582,9 +4642,9 @@
             "enable": false
           },
           {
-            "alertId": 573,
+            "alertId": 605,
             "name": "SelfCleanComplete",
-            "attribute": "LowerCavity_CavityEventNotification",
+            "attribute": "UpperCavity_CavityEventNotification",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5594,7 +4654,7 @@
             "enable": true
           },
           {
-            "alertId": 574,
+            "alertId": 606,
             "name": "ControlLock",
             "attribute": "SystemSettings_ControlLock",
             "type": "push",
@@ -5606,7 +4666,7 @@
             "enable": false
           },
           {
-            "alertId": 575,
+            "alertId": 607,
             "name": "KitchenTimerEventNotification",
             "attribute": "KitchenTimer1_TimerEventNotification",
             "type": "push",
@@ -5618,7 +4678,7 @@
             "enable": false
           },
           {
-            "alertId": 576,
+            "alertId": 609,
             "name": "RemoteStatus",
             "attribute": "Appliance_RemoteEnabledStatus",
             "type": "push",
@@ -5630,9 +4690,9 @@
             "enable": false
           },
           {
-            "alertId": 577,
-            "name": "LowerCavityCulinaryInstructions",
-            "attribute": "LowerCavity_CulinaryCenterUserInstruction",
+            "alertId": 610,
+            "name": "UpperCavityCulinaryInstructions",
+            "attribute": "UpperCavity_CulinaryCenterUserInstruction",
             "type": "push",
             "category": "Cooking",
             "autodelete": false,
@@ -5642,7 +4702,7 @@
             "enable": true
           },
           {
-            "alertId": 578,
+            "alertId": 611,
             "name": "OvenOnWhileAway",
             "attribute": "Online",
             "type": "push",
@@ -5658,35 +4718,8 @@
     ]
   },
   "Services": {
-    "_id": "DDM_Cooking_Minerva_Combo_V1",
+    "_id": "DDM_Cooking_Minerva_Single_V1",
     "thirdPartyServices": [
-      {
-        "name": "Replenishment",
-        "enabled": false,
-        "serviceProvider": [
-          {
-            "name": "ADRS",
-            "enabled": false,
-            "config": {
-              
-            }
-          },
-          {
-            "name": "Wallmart",
-            "enabled": false,
-            "config": {
-              
-            }
-          },
-          {
-            "name": "Whirlpool",
-            "enabled": false,
-            "config": {
-              
-            }
-          }
-        ]
-      },
       {
         "name": "Thermostat",
         "enabled": true,
@@ -5702,46 +4735,6 @@
                 "commandValue": ""
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Energy Management",
-        "enabled": false,
-        "serviceProvider": [
-          {
-            "name": "National Grid",
-            "enabled": false,
-            "config": {
-              
-            }
-          },
-          {
-            "name": "Genability",
-            "enabled": false,
-            "config": {
-              
-            }
-          }
-        ]
-      },
-      {
-        "name": "Voice Integration",
-        "enabled": false,
-        "serviceProvider": [
-          {
-            "name": "Amazon Alexa",
-            "enabled": false,
-            "config": {
-              
-            }
-          },
-          {
-            "name": "Google Home",
-            "enabled": false,
-            "config": {
-              
-            }
           }
         ]
       }
