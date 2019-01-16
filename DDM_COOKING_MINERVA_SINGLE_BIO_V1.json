@@ -5385,9 +5385,9 @@
             "US",
             "CA"
           ],
-          "StateAttributes": [
-            "UpperCavity_MeatProbeStatus"
-          ]
+          "StateAttributes": {
+           "State": "UpperCavity_MeatProbeStatus"
+          }
         }
       },
       "OvenLowerCavity": {
@@ -5429,9 +5429,9 @@
             "US",
             "CA"
           ],
-          "StateAttributes": [
-            "LowerCavity_CavityLight"
-          ]
+          "StateAttributes": {
+           "State": "LowerCavity_CavityLight"
+          }
         },
         "MeatProbe": {
           "Visible": true,
@@ -5440,9 +5440,9 @@
             "US",
             "CA"
           ],
-          "StateAttributes": [
-            "LowerCavity_MeatProbeStatus"
-          ]
+          "StateAttributes": {
+           "State": "LowerCavity_MeatProbeStatus"
+          }
         }
       }
     },
