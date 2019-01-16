@@ -4489,9 +4489,9 @@
             "US",
             "CA"
           ],
-          "StateAttributes": [
-            "UpperCavity_CavityLight"
-          ]
+          "StateAttributes": {
+            "State": "UpperCavity_CavityLight"
+          }
         },
         "MeatProbe": {
           "Visible": true,
@@ -4500,9 +4500,9 @@
             "US",
             "CA"
           ],
-          "StateAttributes": [
-            "UpperCavity_MeatProbeStatus"
-          ]
+          "StateAttributes": {
+            "State": "UpperCavity_MeatProbeStatus"
+          }
         }
       }
     },
